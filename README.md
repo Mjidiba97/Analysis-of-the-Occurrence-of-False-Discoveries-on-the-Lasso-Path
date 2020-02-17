@@ -1,2 +1,10 @@
 # Analysis-of-the-Occurrence-of-False-Discoveries-on-the-Lasso-Path
 Analysis of the weakness of the Lasso algorithm in terms of finding the true features, even if the design variables have string effect size and are stochastically independent.
+
+The  following  report  is  an  analysis  of  the  paper  <a href='https://statweb.stanford.edu/~candes/publications/downloads/LassoFDR.pdf'>”False  Discoveries  occur  Early on  the  Lasso  Path”</a>, written by Weijie Su, Malgorzata Bogdan and Emmanuel Candes. The goal of this analysis is to present the context and the main results of the paper followed by some comments that discuss the key results of the paper as well as their limitations. 
+
+We all use the Lasso algorithm for regression problems, mainly because it automatically performs variable reduction by giving zero coefficients for unimportant features. Normally, we expect the Lasso algorithm to find these important features with few erros, especially when the important variables are not correlated with each other, and have big effect size. The paper mentionned above dicusses the fact that the true features and null features are always interspersed on the Lasso path even whith absence of correlation between variables and having string effect sizes. In fact, the paper demonstrates that there is a certain threshold in which we can have type I and type II errors low at the same time.
+
+In this report, we begin by breifly describing  the  problem encountered by statisticians with some real-world datasets which leads to the use of the  Lasso  regression. Then  we will  describe  the  limitations  of  the  Lasso  when  dealing with these problems, as well as discuss the results mentioned in the paper. This will be followed by explaning the concepts and hypotheses taken to get those results, while also discussing the limitations of these hypotheses. 
+
+Our work also includes a numerical implementation (notebook file) that aims to reproduce the author’s results in the paper and can serve for the reader to do more experimentation and validation.
