@@ -1,5 +1,4 @@
 # Analysis-of-the-Occurrence-of-False-Discoveries-on-the-Lasso-Path
-Analysis of the weakness of the Lasso algorithm in terms of finding the true features, even if the design variables have string effect size and are stochastically independent.
 
 The  following  report  is  an  analysis  of  the  paper  <a href='https://statweb.stanford.edu/~candes/publications/downloads/LassoFDR.pdf'>”False  Discoveries  occur  Early on  the  Lasso  Path”</a>, written by Weijie Su, Malgorzata Bogdan and Emmanuel Candes. The goal of this analysis is to present the context and the main results of the paper followed by some comments that discuss the key results of the paper as well as their limitations. 
 
